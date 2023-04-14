@@ -9,10 +9,10 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-  :root {
-    --bg-color: #1f1f21;
-    --text-color: #fff;
-    --main-color: #ffae00;
+:root {
+  --bg-color: #1f1f21;
+  --text-color: #fff;
+  --main-color: rgb(185, 173, 103);
 }
 
 .login-wrapper {
