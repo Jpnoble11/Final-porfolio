@@ -8,7 +8,7 @@
 }
 
 :root {
-  --bg-color: #1f1f21;
+  --bg-color: #353b48;
   --text-color: #fff;
   --main-color: #5dd4da;
 
@@ -76,7 +76,7 @@ header {
   font-weight: 700;
   font-size: 15px;
 }
-.log-in span {
+.log-in p {
   color: var(--text-color);
 }
 
@@ -294,6 +294,9 @@ section {
   }
   .btn {
     padding: 9px 28px;
+  }
+  .navbar.open {
+    left: 0;
   }
 }
 
