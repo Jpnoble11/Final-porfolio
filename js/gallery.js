@@ -21,4 +21,5 @@ sr.reveal(".info", { delay: 200, origin: "left" });
 sr.reveal(".education h1", { delay: 200, origin: "top" });
 
 sr.reveal(".timeline", { delay: 200, origin: "top" });
+sr.reveal(".skill", { delay: 200, origin: "top" });
 timeline;
