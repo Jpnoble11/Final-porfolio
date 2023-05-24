@@ -1,58 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homepage</title>
-    <link rel="stylesheet" type="text/css" href="css/about.css" />
-
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      <a href="#" class="logo"><span>J</span>PN</a>
-
-      <ul class="navbar">
-        <li><a href="index.html" target="_self" >Home</a></li>
-        <li><a href="about.html" target="_self" class="active">About</a></li>
-        <li><a href="projects.html" target="_self">projects</a></li>
-        <li><a href="contact.html" target="_self">contact</a></li>
-      </ul>
-      <div class="main">
-        <div class="log-in">
-          <a href="login.html" class="user" target="_self"
-            ><i class="ri-user-line"></i>
-            <p>Sign In</p></a
-          >
-        </div>
-        <div class="menu-btn">
-          <p>Menu</p>
-          <div class="bx bx-menu" , id="menu-icon"></div>
-        </div>
-      </div>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+/>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+  rel="stylesheet"
+/>
+  <link rel="stylesheet" href="css/nav-bar.css">
+  <link rel="stylesheet" href="css/about.css">
+</head>
+<body>
+  <header>
+		<div class="container">
+			<h2><span>JPN</span></h2>
+            <div class="navbar">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="home.html" class="nav-icon">
+                                <i class="uil uil-estate"></i>
+                                Home
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a href="about.html" class="nav-icon">
+                                <i class="uil uil-user"></i>
+                                About Me
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a href="projects.html" class="nav-icon">
+                                <i class="uil uil-file-alt"></i>
+                                Projects
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a href="contact.html" class="nav-icon">
+                                <i class="uil uil-message"></i>
+                                Contact Me
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+			<button class="hamburger">
+				<div class="bar"></div>
+			</button>
+		</div>
+	</header>
+	<nav class="mobile-nav">
+		<a href="home.html">Home</a>
+		<a href="about.html">About Me</a>
+		<a href="projects.html">Projects</a>
+		<a href="contact.html">Contact Me</a>
+	</nav>
     <section class="home">
       <div class="home-text">
-        <span>About me?</span>
-        <p>As a student, programming in HTML, CSS, Java, and JavaScript is a fascinating and rewarding hobby that allows me to create visually appealing web pages and design interactive user interfaces. I believe that learning these programming languages can lead to potential career opportunities and continuously developing my skills through personal projects and experimentation is an exciting aspect of this hobby.</p>
+        <span class="me">About me?</span>
+        <p>As a student, programming in HTML, CSS, Java, and JavaScript is a fascinating and rewarding hobby that allows me to create visually 
+          appealing web pages and design interactive user interfaces. I believe that learning these programming languages can lead to potential
+           career opportunities and continuously developing my skills through personal projects and experimentation is an exciting aspect of this hobby.</p>
       </div>
       <div class="home-img">
         <img src="img/p.png" alt="profile" />
       </div>
     </section>
     <section class="ho">
-      <div class="s">
-        
+      <div class="s">   
       <h1>Skills</h1>  
       <div class="con">
         <div class="skill">          
@@ -140,6 +166,7 @@
       </div>
     </section>
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/nav-bar.js"></script>
     <script src="js/home.js"></script>
   </body>
 </html>
