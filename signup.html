@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sign-Up</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/signup.css" />
+  </head>
+
+  <body>
+    <main>
+      <div class="container-signup">
+        <h2 class="signup-title">SIGN UP</h2>
+        <form
+          name="signupForm"
+          action="/"
+          class="signup-form"
+          onsubmit="return createAccount()"
+        >
+          <div class="row-form">
+            <div class="personal-info">
+              <h3>Personal Information</h3>
+              <label for="first-name">First name:</label>
+              <div class="login-box">
+                <input
+                  type="text"
+                  name="first-name"
+                  placeholder="Enter first name"
+                  required
+                />
+              </div>
+              <label for="last-name">Last name:</label>
+              <div class="login-box">
+                <input
+                  type="text"
+                  name="last-name"
+                  placeholder="Enter last name"
+                  required
+                />
+              </div>
+              <label for="birthdate">Birthdate:</label>
+              <div class="login-box">
+                <input type="date" name="birthdate" required />
+              </div>
+            </div>
+            <div class="signin-info">
+              <h3>Sign-in Information</h3>
+              <label for="email">Email</label>
+              <div class="login-box">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Enter email"
+                  required
+                />
+              </div>
+              <label for="password">Password</label>
+              <div class="login-box">
+                <input
+                  type="password"
+                  name="password"
+                  placeholder="Enter password"
+                  required
+                />
+              </div>
+              <label for="confirm-password">Confirm Password</label>
+              <div class="login-box">
+                <input
+                  type="password"
+                  name="confirm-password"
+                  placeholder="Confirm password"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row-buttons">
+            <input type="submit" class="login_btn" value="Create Account" />
+            <a href="/">Cancel</a>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <script src="js/signup.js"></script>
+  </body>
+</html>

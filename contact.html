@@ -104,36 +104,37 @@
               </div>
             </div>
           </div>
+          
           <div class="contactForm">
-            <form>
+            <form action="https://formspree.io/f/mayzzoal" method="POST">
               <h2>Send Message</h2>
-  
-              <div class="inputBox">
-                <input type="text" name=" " required="" />
-                <span class="n">Full Name</span>
-              </div>
-  
-              <div class="inputBox">
-                <input type="text" name=" " required="" />
-                <span class="n">Email</span>
-              </div>
-  
-              <div class="inputBox">
-                <textarea required="required"></textarea>
-                <span class="n">Type your Message...</span>
-  
-                <div class="inputBox">
-                  <input type="submit" name=" " value="Send" />
-                </div>
-              </div>
+
+  <div class="inputBox">
+    <input id="name" type="text" name="name" required />
+    <span class="n">Full Name</span>
+  </div>
+
+  <div class="inputBox">
+    <input id="email" type="email" name="email" required />
+    <span class="n">Email</span>
+  </div>
+
+  <div class="inputBox">
+    <textarea id="message" name="message" required></textarea>
+    <span class="n">Type your Message...</span>
+  </div>
+
+  <div class="inputBox">
+    <input type="submit" value=Submit>
+  </div>
             </form>
           </div>
-        </div>
-      </section>
-  
-    
-      </body>
+          
+       
+          
       <script src="https://unpkg.com/scrollreveal"></script>
       <script src="js/nav-bar.js"></script>
-      <script src="js/home.js"></script>
+        </body>
       </html>
+
+     

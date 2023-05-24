@@ -13,7 +13,3 @@ sr.reveal(".home-img", { delay: 950, origin: "right" });
 
 sr.reveal(".social", { delay: 950, origin: "bottom" });
 sr.reveal("p", { delay: 950, origin: "bottom" });
-
-sr.reveal(".bg", { delay: 950, origin: "right" });
-sr.reveal(".contactForm", { delay: 950, origin: "right" });
-sr.reveal("h3, h2, .icon", { delay: 950, origin: "right" });
