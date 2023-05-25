@@ -130,7 +130,7 @@ span {
 .mobile-nav a:hover {
   background-color: #24104f;
 }
-@media (min-width: 768px) {
+@media (min-width: 1145px) {
   .mobile-nav {
     display: none;
   }
@@ -164,7 +164,7 @@ header .container h2 {
   font-size: 25px;
   font-weight: 900;
 }
-@media (max-width: 767px) {
+@media (max-width: 1144px) {
   header .container nav {
     display: none;
   }
