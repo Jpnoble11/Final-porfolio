@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Rubik", sans-serif;
+  font-family: 'Rubik', sans-serif;
   list-style: none;
   text-decoration: none;
 }
@@ -48,6 +48,7 @@ header {
 .gallery:hover {
   transform: translatey(-5px);
   background: #262a35;
+  border: 1px solid #5dd4da;
   color: white;
 }
 
@@ -78,8 +79,6 @@ h1 {
   max-width: 1600px;
   margin: 150px 100px 0px 230px;
   padding: 0 100px;
-
-  color: red;
 }
 .content {
   background: #2a2e3a;
@@ -96,7 +95,7 @@ input {
   display: none;
 }
 label {
-  color: black;
+  color: white;
   display: inline-block;
   padding: 10px 25px;
   font-weight: 600;

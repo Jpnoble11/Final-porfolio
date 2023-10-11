@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Rubik", sans-serif;
+  font-family: 'Rubik', sans-serif;
   list-style: none;
   text-decoration: none;
 }
@@ -68,111 +68,112 @@ section {
   line-height: 30px;
   margin-bottom: 30px;
 }
-.ho {
-  position: relative;
-  height: 110vh;
-  width: 100%;
-  background: url(https://i.pinimg.com/564x/27/ac/63/27ac6351adf065a1bcc80b45551ed6ea.jpg);
-  background-size: cover;
-  background-position: center;
-  align-items: flex-start;
-  padding-top: 100px;
-  padding-bottom: 180px;
+/*-----SKill Section-----*/
+.inner {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0 50px;
 }
-.ho h1 {
-  padding-top: 50px;
+.headers {
   text-align: center;
+  color: #fff;
+  padding: 1rem;
+  position: relative;
 }
-.s h1 {
-  color: #5dd4da;
-  font-size: var(--big-font);
+.headers:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 100px;
+  background-color: var(--main-color);
 }
-.skill {
-  width: 500px;
-  margin: 60px auto;
-  padding: 20px;
-  background: transparent;
-  border-style: solid;
-  border-width: 3px;
-  border-color: black;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  grid-gap: 1rem;
+  padding: 1rem 80px;
+  font-size: 1.2rem;
 }
-.skill li {
-  margin: 20px 0;
-  padding: 10px;
+.skill-box {
+  padding: 1rem;
+  color: #ddd;
+  cursor: pointer;
 }
-.bar {
-  background: #353b48;
-  display: block;
-  height: 20px;
-  border: solid rgba(0, 0, 0, 0.3);
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  transition: all 0.3 cubic-bezier(0.25, 8, 0.25, 1);
+.skill-box:hover > .skill-title:after,
+.skill-box:hover > .skill-title::before {
+  width: 35px;
 }
-.bar:hover {
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-}
-.bar span {
-  height: 20px;
-  float: left;
-  background: linear-gradient(
-    135deg,
-    rgba(103, 242, 209) 0px,
-    rgba(93, 212, 218) 100%
-  );
+.skill-box:hover img {
+  transform: translateY(-10px);
 }
 
-.html {
-  width: 80%;
-  animation: html 3s;
+.skill-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  position: relative;
 }
-.css {
-  width: 60%;
-  animation: css 3s;
+
+.skill-title:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  width: 0;
+  height: 4px;
+  border-radius: 2px 0 0 2px;
+  background-color: var(--main-color);
+  transition: 0.5s;
 }
-.java {
+.skill-title:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 4px;
+  border-radius: 0 2px 2px 0;
+  background-color: var(--main-color);
+  transition: 0.5s;
+}
+.img {
+  width: 90px;
+  height: 90px;
+  position: relative;
+  border-radius: 45px;
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+.img:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 50%;
-  animation: java 3s;
+  height: 90px;
+  border-radius: 45px 0 0 45px;
 }
-.javascript {
-  width: 30%;
-  animation: javascript 3s;
+.skill-title h3 {
+  color: #fff;
+  margin-top: 1rem;
+}
+.skill-icon {
+  width: 50px;
+  z-index: 2;
 }
 
-@keyframes html {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 80%;
-  }
-}
-@keyframes css {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 60%;
-  }
-}
-@keyframes java {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 50%;
-  }
-}
-@keyframes javascript {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 30%;
-  }
-}
+/*--------EDUCATION SECTION-------*/
 .education {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -243,7 +244,7 @@ section {
   left: -20px;
 }
 .timeline::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 6px;
   height: 100%;
