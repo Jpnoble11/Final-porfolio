@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Log-in</title>
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
+
+  <body>
+    <main>
+      <div class="container-login">
+        <form
+          name="loginForm"
+          action="./home"
+          class="login-form"
+          onsubmit="return loginAccount()"
+        >
+          <h2 class="login-title">Login</h2>
+          <label for="email">Email</label>
+          <div class="login-box">
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter email"
+              required
+            />
+          </div>
+          <label for="password">Password</label>
+          <div class="login-box">
+            <input
+              type="password"
+              name="password"
+              placeholder="Enter password"
+              required
+            />
+          </div>
+          <button type="submit" class="login_btn">Login</button>
+          <a href="./signup">Sign up</a>
+        </form>
+      </div>
+    </main>
+
+    <script src="js/login.js"></script>
+  </body>
+</html>
